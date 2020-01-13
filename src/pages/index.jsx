@@ -7,8 +7,11 @@ export default function index(props){
     return (
         <>
             <Header />
-            <h1>How do you escape from tarkov?</h1>
-            <h3>Don't play!</h3>
+            <div className="text-center">
+                <h1>How do you escape from tarkov?</h1>
+                <h3>Don't play!</h3>
+            </div>
+
             <Maps />
         </>
     );
