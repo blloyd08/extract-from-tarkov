@@ -7,13 +7,15 @@ import InterchangeMap from '../maps/interchange.jpg'
 import FactoryMap from '../maps/factory.png'
 import WoodsMap from '../maps/woods.jpg'
 import ShorelineMap from '../maps/shoreline.jpg'
+import ReserveMap from '../maps/reserve.png'
 
 const maps = {
     Customs: CustomsMap,
     Interchange: InterchangeMap,
     Factory: FactoryMap,
     Woods: WoodsMap,
-    Shoreline: ShorelineMap
+    Shoreline: ShorelineMap,
+    Reserve: ReserveMap
 }
 
 
