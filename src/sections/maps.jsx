@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Navbar, Nav, Card } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 
 import CustomsMap from '../maps/customs.png'
 import InterchangeMap from '../maps/interchange.jpg'
@@ -27,19 +27,22 @@ export function Maps(props){
 
     return (
         <>
-            <h1>Maps</h1>
-            <Navbar bg="dark" variant="dark">
-                <Nav bg="dark" variant="pills" defaultActiveKey="Customs" onSelect={handleSelect} >
-                    {Object.keys(maps).map(mapName => {
-                        return (
-                            <Nav.Item>
-                                <Nav.Link eventKey={mapName}>{mapName}</Nav.Link>
-                            </Nav.Item>
-                        );
-                    })}
-                </Nav>
-            </Navbar>
-            <img src={currentMapImage} alt="Map"/>
+          <h1>Maps</h1>
+          <Navbar bg="dark" variant="dark" expand="md">
+              <Navbar.Toggle aria-controls="maps-navbar-nav" />
+              <Navbar.Collapse id="maps-navbar-nav" >
+                  <Nav bg="dark" variant="pills" defaultActiveKey="Customs" onSelect={handleSelect} >
+                      {Object.keys(maps).map(mapName => {
+                          return (
+                              <Nav.Item>
+                                  <Nav.Link eventKey={mapName}>{mapName}</Nav.Link>
+                              </Nav.Item>
+                          );
+                      })}
+                  </Nav>
+              </Navbar.Collapse>
+          </Navbar>
+          <img src={currentMapImage} alt="Map"/>
         </>
     );
 }
