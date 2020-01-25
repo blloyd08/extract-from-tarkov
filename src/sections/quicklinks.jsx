@@ -23,6 +23,10 @@ export function QuickLinks(props){
               <td><a href="https://www.reddit.com/r/EscapefromTarkov/comments/dkzshm/interactive_key_sheet/">Keys Excel Sheet</a></td>
               <td>Excel workbook for tracking keys, including maps</td>
             </tr>
+            <tr>
+              <td><a href="https://odealo.com/articles/best-ammo-in-escape-from-tarkov">Best Ammo</a></td>
+              <td>Best ammo guide</td>
+            </tr>
           </tbody>
         </Table>
       </Card.Body>       
