@@ -3,6 +3,7 @@ import React from 'react';
 import Index from './pages/index';
 
 import './App.css';
+import './styles/bootstrap.min.css'
 
 function App() {
   return (
